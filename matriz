@@ -1,0 +1,18 @@
+# Criando uma matriz de 2x2 com os valores de 1 a 4
+e <- matrix(ncol=2, nrow=2, data = 1:4)
+
+# Acessando elementos da matriz e:
+# Retorna o elemento da segunda linha e primeira coluna
+e[2,1]
+
+# Retorna a segunda linha completa da matriz
+e[2, ]
+
+# Retorna a segunda coluna completa da matriz
+e[ ,2]
+
+# Retorna todas as linhas e as duas primeiras colunas da matriz
+e[ ,1:2]
+
+# Retorna as duas primeiras linhas e a primeira coluna da matriz
+e[1:2,1]
