@@ -1,0 +1,38 @@
+# Carregando a biblioteca dslabs e o conjunto de dados murders
+library(dslabs)
+data(murders)
+
+# Ordenando os valores da coluna total em ordem crescente
+sort(murders$total)
+
+# Exibindo os nomes dos 10 primeiros estados na coluna state
+murders$state[1:10]
+
+# Exibindo as siglas dos estados correspondentes na coluna abb, na mesma ordem
+murders$abb[1:10]
+
+# Armazenando o índice da ordem crescente dos valores da coluna total em uma variável
+index <- order(murders$total)
+
+# Acessando as siglas dos estados em ordem crescente de total de assassinatos
+murders$abb[index]
+
+# Encontrando o maior valor na coluna total
+max(murders$total)
+
+# Encontrando o índice correspondente ao maior valor na coluna total
+i_max <- which.max(murders$total)
+i_max
+
+# Exibindo o nome do estado com o maior número de assassinatos
+murders$state[i_max]
+
+# Encontrando o menor valor na coluna total
+min(murders$total)
+
+# Encontrando o índice correspondente ao menor valor na coluna total
+i_min <- which.min(murders$total)
+i_min
+
+# Exibindo o nome do estado com o menor número de assassinatos
+murders$state[i_min]
